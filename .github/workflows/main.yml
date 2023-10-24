@@ -34,4 +34,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: false
-          tags: alfredodeza/flask-roberta:latest
+          tags: alfredodeza/flask-roberta:latest #adding comment
