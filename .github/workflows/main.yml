@@ -3,7 +3,7 @@ name : Build and package Roberta-sentencing to Dockerhub
 on :
   # Trigger the workflow on push or pull requests events on the main branch
   push:
-    branches : [main]
+    branches : [webapp]
 
   # Allows you to run this workflow manually from the Actions tab:   #add comment
   workflow_dispatch:
