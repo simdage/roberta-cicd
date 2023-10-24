@@ -29,7 +29,7 @@ on :
           run: az ml model download -t "." --model-id "roberta-sequence:1"
 
         - name: build flask-app container
-          uses: docker/build-push-action@v2
+          uses: docker/build-push-action@v2 # adding a comment
           with:
             context: ./
             file: ./Dockerfile
