@@ -22,6 +22,9 @@ jobs:
       - name: Upgrade Azure cli
         run: az upgrade
 
+      - name: Adding extension
+        run: az extension add --name ml
+
       - name: set auto-install of extensions
         run: az config set extension.use_dynamic_install=yes_without_prompt
 
