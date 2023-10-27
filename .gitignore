@@ -1,1 +1,2 @@
-webapp/roberta-sequence-classification-9.onnx
+*.onnx
+roberta-sequence/
