@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt
 
 COPY webapp/* /webapp
 
-COPY webapp/roberta-sequence-classification-9.onnx /webapp
+COPY webapp/roberta-sequence/roberta-sequence-classification-9.onnx /webapp
 
 ENTRYPOINT ["python"]
 
