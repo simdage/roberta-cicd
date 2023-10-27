@@ -28,11 +28,8 @@ jobs:
       - name: set auto-install of extensions
         run: az config set extension.use_dynamic_install=yes_without_prompt
 
-      - name: attach workspace
-        run: az ml folder attach -w "ml-ws" -g "practical-mlops"
-
       - name: retrieve the model
-        run: az ml model download -t "." --model-id "roberta-sequence:1"
+        run: az ml model download -t "." --workspace-name practical-mlops --name "roberta-sequence" --version 1
 
       - name: build flask-app container
         uses: docker/build-push-action@v2 #this is a comment
